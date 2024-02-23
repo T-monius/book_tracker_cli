@@ -56,6 +56,7 @@ CREATE TABLE tags (
 CREATE TABLE events (
   id serial PRIMARY KEY,
   user_id int REFERENCES users(id),
+  book_id int default NULL REFERENCES books(id),
   type varchar(50) NOT NULL,
   description varchar(50),
   value numeric(4,2),
@@ -71,6 +72,15 @@ CREATE TABLE goals (
   title varchar(50),
   term_date timestamp,
   description varchar(255),
+  created_at timestamp,
+  updated_at timestamp,
+  deleted_at timestamp
+);
+
+CREATE TABLE goals_events (
+  id serial PRIMARY KEY,
+  goal_id int NOT NULL,
+  event_id int NOT NULL,
   created_at timestamp,
   updated_at timestamp,
   deleted_at timestamp
