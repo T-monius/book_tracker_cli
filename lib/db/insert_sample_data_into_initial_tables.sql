@@ -59,3 +59,30 @@ INSERT INTO tags (book_id, title, created_at, updated_at)
       now(),
       now()
     );
+
+INSERT INTO goals (user_id, title, term_date, description, created_at, updated_at)
+     VALUES (
+       1,
+       'Yearly reading goal',
+       '2024-12-31 23:59:59',
+       'Read 17 books this year',
+       now(),
+       now()
+     );
+
+INSERT INTO events (user_id, book_id, type, value, created_at, updated_at)
+     VALUES (
+       1,
+       1,
+       'READ',
+       2,
+       now(),
+       now()
+     ), (
+       1,
+       1,
+       'READ',
+       5,
+       now(),
+       now()
+     );
