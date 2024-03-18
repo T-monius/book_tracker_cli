@@ -39,6 +39,7 @@ CREATE TABLE notes (
   book_id int REFERENCES books(id),
   title varchar(50),
   body varchar(500),
+  location jsonb, -- { page: __EXAMPLE_, paragraph: __EXAMPLE__, sentence: __EXAMPLE__ } --
   created_at timestamp,
   updated_at timestamp,
   deleted_at timestamp
