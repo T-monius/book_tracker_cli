@@ -61,6 +61,7 @@ CREATE TABLE events (
   type varchar(50) NOT NULL,
   description varchar(50),
   value numeric(4,2),
+  status varchar(50),
   metadata jsonb,
   created_at timestamp,
   updated_at timestamp,
