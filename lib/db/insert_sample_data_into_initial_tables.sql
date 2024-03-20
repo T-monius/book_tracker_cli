@@ -86,23 +86,23 @@ INSERT INTO books (
 INSERT INTO categories (book_id, name, created_at, updated_at)
      VALUES (2, 'Business', now(), now());
 
-INSERT INTO goals (user_id, title, term_date, description, created_at, updated_at)
+INSERT INTO goals (user_id, title, term_date, description, value, status, created_at, updated_at)
      VALUES (
        1,
        'Yearly reading goal',
        '2024-12-31 23:59:59',
        'Read 17 books this year',
+       17,
+       'PENDING',
        now(),
        now()
-     );
-
-INSERT INTO goals (user_id, title, term_date, description, value, created_at, updated_at)
-     VALUES (
+     ), (
        1,
        'Montly reading goal',
        '2024-2-29 23:59:59',
        'Read a book by the end of the month',
        1,
+       'COMPLETE',
        now(),
        now()
      );
