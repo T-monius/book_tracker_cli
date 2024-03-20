@@ -75,6 +75,7 @@ CREATE TABLE goals (
   term_date timestamp,
   description varchar(255),
   value numeric(4,2),
+  status varchar(50),
   created_at timestamp,
   updated_at timestamp,
   deleted_at timestamp
