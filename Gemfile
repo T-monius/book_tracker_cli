@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'book_tracker_cli'
+# gem 'book_tracker_cli'
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 

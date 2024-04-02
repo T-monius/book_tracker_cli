@@ -10,6 +10,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'book_tracker_cli'
+# ^THIS APPEARS TO BREAK THE REPO
 ```
 
 And then execute:
